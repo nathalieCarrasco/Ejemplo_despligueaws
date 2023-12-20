@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="/styles.css">
 </head>
-    <title>De Local a la Nube</title>
-</head>
-<body  class="bg-orange-200 p-4">
+
+<body class="bg-white p-0 m-0">
     <!-- Navbar -->
-    <nav class="bg-orange-500 p-4 mb-8">
+    <nav class="bg-orange-500 p-6 mb-8">
         <div class="container mx-auto">
             <a href="#" class="text-black font-bold text-xl">Inicio</a>
             <a href="#costos" class="text-white ml-4">Costos de la Nube</a>
@@ -19,8 +19,8 @@
         </div>
     </nav>
 
-     <!-- Carrusel -->
-    <div class="container mx-auto">
+    <!-- Sección 1 - Carrusel de Imágenes -->
+    <div class="container h-screen w-full" id="section1">
         <div id="carousel" class="carousel swiper-container">
             <div class="swiper-wrapper">
                 <!-- Las diapositivas del carrusel irán aquí -->
@@ -40,30 +40,75 @@
         </div>
     </div>
 
-    <!-- Contenido principal -->
-    <div class="container mx-auto text-white">
-        <h1 class="text-4xl font-bold mb-4">La Importancia de la Nube y Sus Beneficios</h1>
-        <p class="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
-        </p>
+     <!-- Sección 2 - Texto e Imágenes -->
+     <div class="container  bg-blue-300 h-screen w-full flex items-center justify-center" id="section2">
+        <div class="section text-center p-8">
+            <h1 class="text-4xl font-bold mb-4">La Importancia de la Nube y Sus Beneficios</h1>
+            <p class="text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+            </p>
+            <button class="button">Botón</button>
+            <p class="text-blue-800 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
     </div>
 
-     <!-- Enlace a Costos de la Nube -->
-     <div id="costos" class="container mx-auto mt-8">
-        <h2 class="text-2xl font-bold mb-4">Costos de la Nube</h2>
-        <p class="text-lg">
-            Información sobre los costos asociados con el uso de servicios en la nube.
-        </p>
+    <!-- Sección 3 - Tarjetas con Imágenes de Fondo -->
+    <div class="container h-screen w-full flex items-center">
+        <div class="flex justify-between p-4 w-full">
+            <!-- Tarjeta 1 -->
+            <div class="card bg-cover bg-center relative" style="background-image: url('/src/img/card1.jpg');">
+                <!-- Contenido que se mostrará al pasar el ratón -->
+                <div class="card-content">
+                    <h2 class="text-xl font-bold mb-2 text-gray-800">Título 1</h2>
+                    <button class="button">Ir a la Sección</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="card bg-cover bg-center relative" style="background-image: url('/src/img/card2.jpg');">
+                <!-- Contenido que se mostrará al pasar el ratón -->
+                <div class="card-content">
+                    <h2 class="text-xl font-bold mb-2 text-gray-800">Título 2</h2>
+                    <button class="button">Ir a la Sección</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card bg-cover bg-center relative" style="background-image: url('./img/1.png')">
+                <!-- Contenido que se mostrará al pasar el ratón -->
+                <div class="card-content">
+                    <h2 class="text-xl font-bold mb-2 text-gray-800">Título 3</h2>
+                    <button class="button">Ir a la Sección</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Enlace a Tutorial -->
-    <div id="tutorial" class="container mx-auto mt-8">
-        <h2 class="text-2xl font-bold mb-4">Tutorial: Cómo Subir una Landing Page a S3</h2>
-        <p class="text-lg">
-            Instrucciones detalladas paso a paso sobre cómo cargar una página web en Amazon S3.
-        </p>
+    <!-- Sección 4 - Costos de la Nube -->
+    <div class="container h-screen w-full" id="section4">
+        <div class="section">
+            <h2 class="text-2xl font-bold mb-4">Costos de la Nube</h2>
+            <p class="text-lg">
+                Información sobre los costos asociados con el uso de servicios en la nube.
+            </p>
+            <button class="button">Botón</button>
+        </div>
     </div>
+
+    <!-- Sección 5 - Tutorial -->
+    <div class="container h-screen w-full bg-orange-200" id="section5">
+        <div class="section">
+            <h2 class="text-2xl font-bold mb-4">Tutorial: Cómo Subir una Landing Page a S3</h2>
+            <p class="text-lg">
+                Instrucciones detalladas paso a paso sobre cómo cargar una página web en Amazon S3.
+            </p>
+            <button class="button">Botón</button>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
+
 </html>
+
